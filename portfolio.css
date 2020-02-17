@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+header {
+    width: 100%;
+    height: 90px;
+    background: cadetblue;
+    display: flex;
+}
+.nav {
+    width: 33.333%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav ul li a{
+    color: rgba(20, 39, 64,1);
+    font-size: 20px;
+}
+.nav li a::before {
+    position: absolute;
+    content: "";
+    top: 26px;
+    right: 0;
+    width: 1px;
+    height: 40%;
+    background: white;
+}
+.logo {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.title {
+    width: 50%;
+    /* height: 100%; */
+}
+.title h2 {
+    font-size: 70px;
+    letter-spacing: 11px;
+}
+.address{
+    width: 33.333%;
+    height: 100%;
+}
+.address-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address-text p {
+    text-align: center;
+    font-size: 15px;
+}
+main{
+    width: 100%;
+    height: 100%;
+    /* background: chocolate; */
+}
+.atf {
+    width: 100%;
+    height: 80vh;
+    background: #142740;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.atf-title {
+    width: 100%;
+    height: 50%;
+    /* background: cornflowerblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.atf-title-h1 {
+    width: 800px;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+.atf-title h1 {
+    text-align: center;
+    position: relative;
+    font-size: 70px;
+    letter-spacing: 11px;
+    left: 39px;
+    color: white;
+}
+/* .atf-logo {
+    width: 100%;
+    height: 60%;
+    background: darkcyan;
+    display: flex;
+    justify-content: center;
+} */
+.logo-text {
+    width: 40%;
+    height: 50%;
+    /* background: coral; */
+    display: flex;
+    justify-content: center;
+    letter-spacing: 12px;
+}
+.logo-text-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo-text-2 h3 {
+    padding-top: 11px;
+    padding-left: 11px;
+    color: white;
+}
+/* .atf-logo h3 {
+    padding-top: 13px;
+    padding-right: 5px;
+    padding-left: 15px;
+} */
+.logo-text-2 img{
+    width: 50px;
+    height: 50px;
+}
+
+.manu {
+    /* background: crimson; */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 80vh;
+    grid-template-areas: "home menu gallery artist contact";
+}
+.wrapper1 {
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 39, 64,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.wrapper1:hover{
+    background: rgba(20, 39, 64,0.5);
+}
+.wrapper1:hover a{
+    opacity: 1;
+    transition: all 0.3s;
+}
+.manu-home {
+    grid-area: home;
+    background: url(../image/man.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 30px;  
+}
+.manu-home a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.1;
+}
+
+
+.manu-menu {
+    grid-area: menu;
+    background: url(../image/grayscale-photography-of-topless-man-standing-while-looking-3373355.jpg);
+    background-size: cover;
+    overflow: hidden;
+    /* background-position: right; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 30px;  
+}
+.manu-menu a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.1;
+}
+
+
+.manu-gallery{
+    grid-area: gallery;
+    background: url(../image//man-looking-sideways-3290889.jpg);
+    background-size: cover;
+    overflow: hidden;
+    /* background-position: right; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 30px;  
+}
+.manu-gallery a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.1;
+}
+
+
+.manu-artist {
+    grid-area: artist;
+    background: url(../image/grayscale-photo-of-man-2659177.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 30px;
+}
+.manu-artist a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.1;
+}
+
+.manu-contact{
+    grid-area: contact;
+    background: url(../image/daniel-apodaca-ky5A_DQTSAA-unsplash.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 30px;
+}
+.manu-contact a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.1;
+}
