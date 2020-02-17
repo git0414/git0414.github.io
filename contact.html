@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+                <section class="header-logo">
+                    <div class="header-logo-img">
+                        <img src="../assets/image/hige-perfect5.png" alt="logo">
+                    </div>
+                    <div class="header-logo-title">
+                        <h3>And...</h3>
+                    </div>
+                </section>
+                <section class="header-menu">
+                    <ul>
+                        <li><a href="../assets/portfolio.html">Home</a></li>
+                        <li><a href="../assets/menu.html">Menu</a></li>
+                        <li><a href="../assets/gallery.html">Gallery</a></li>
+                        <li><a href="../assets/artist.html">Artist</a></li>
+                        <li><a href="../assets/contact.html">Contact</a></li>
+                    </ul>
+                </section>
+        </header>
+        <main>
+            <section class="contact">
+                <article class="contact-wrapper">
+                        
+                            <div class="shop-img">
+                                <img class="active" src="../assets/image/reda-rachdi-kG0fqqmJqoo-unsplash.jpg" alt="">
+                                <img src="../assets/image/amita-roy-Invhh-dw8-4-unsplash.jpg" alt="">
+                                <img src="../assets/image/hannah-delp-I0AIFLB7qDI-unsplash.jpg" alt="">
+                            </div>                                                                                 
+
+                        <div class="dots">
+                            <div class="dot" onclick="moveNext1()"></div>
+                            <div onclick="moveNext2()"></div>
+                            <div onclick="moveNext3()"></div>
+                        </div>
+        
+                        <form action="" class="contact-form">
+                        <div class="under-line2">
+                                <label for="yourName">Full Name</label><br>
+                                <input class="yourName" type="text" placeholder="Your Name">
+                                <span class="focus_line2"></span>
+                        </div>
+                        <br><br>
+                        <div class="under-line2">
+                                <label for="number">Cellphone</label><br>
+                                <input class="number" type="text" placeholder="Number">
+                                <span class="focus_line2"></span>
+                        </div>
+                        <br><br>
+                        <label for="time">Recommend Time</label><br>
+                        <div class="times">
+                                <div class="time">
+                                        <input id="time" type="radio" name="time" value="morning"><label for="">  Am9:00~12:00</label> 
+                                </div>
+                                <div class="time">
+                                        <input type="radio" name="time" value="Afternoon"><label for="">  Pm13:00~17:00</label>
+
+                                </div>
+                                <div class="time">
+                                        <input type="radio" name="time" value="Night"><label for="">  Pm18:00~23:00</label>
+                                </div>                     
+                                
+                        </div>
+                        <br>
+                        <div class="textarea">
+                                <textarea name="text" id="" cols="30" rows="10" placeholder="Coment"></textarea>
+                        </div>
+                        <br>
+                        <div class="button"><button type="submit" name="submit">Submit</button></div>
+                        
+                        </form>
+                </article>                
+            </section>
+            <section class="map">
+                <article class="map-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26783.376410941903!2d-74.0043150744127!3d40.73764801471278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30bb52f0ca3102cc!2sNYC%20Ink!5e0!3m2!1sja!2sph!4v1579160160514!5m2!1sja!2sph" frameborder="0" style="border:0;" allowfullscreen="" class="gmap"></iframe>
+                </article>
+            </section>
+        </main>
+        <footer>
+                <article class="footer-text">
+                    <div class="footer-text-wrapper">
+                        <div class="footer-text-logo">
+                            <h3>And...</h3>
+                        </div>
+                        <div class="footer-text-text">
+                            <p>TEL +1 212-253-2775<br>
+                                186 Orchard St, New York, NY 10002 
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="footer-logo">
+                    <div class="footer-logo-logo">
+                        <h2>NO TATTOO NO LIFE</h2>
+                    </div>
+                </article>
+                <article class="footer-sns">
+                    <nav class="footer-nav">
+                            <ul>
+                                    <li><a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                    </nav>
+                </article>
+            </footer>
+            <script src="../assets/js/contact.js"></script>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.8.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.8.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+    
+</body>
+</html>
